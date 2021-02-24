@@ -1,0 +1,68 @@
+
+html {
+    height: 100%;
+    background: #0f0f0f;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: Garamond;
+}
+
+#calcHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator {
+    height: 55%;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 1.5%;
+    margin: auto;
+    width: 17%;
+    border-style: solid;
+    border-color: #303841;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "text text text text" "AC C rem div" "sev eigh nine plus" "four five six minus" "one two three multi" "zero dec eq eq";
+    grid-gap: 10px;
+}
+
+
+#answerHolder {
+    height: 100%;
+    grid-area: text;
+    border-radius: 15px;
+    border-style: solid;
+    background-color: #303841;
+    border-color: #29a19c;
+}
+#answer{
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  text-align: right;
+}
+
+#calculateButton{
+  grid-area: eq;
+}
+
+button {
+    border-radius: 60px;
+    background-color: #27323a;
+    font-size: 25px;
+    color: #000000;
+    font-weight: bold;
+    border-color: #29a19c;
+}
+
+button:hover{
+    height: 105%;
+    width: 105%;
+}
